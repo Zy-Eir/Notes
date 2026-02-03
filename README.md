@@ -12,7 +12,7 @@ I tried making a "notes app" from scratch to see how hard it would be to build o
 ## Future addons/ improvements
 - A drawing canvas. This one's mostly complete, just want to add more options for the canvas is all.
 - Possibly making a code editor mode with a live preview function. this addon is basically a project in itself but I do wanna add this feature.
-- More themes or the option to create custom themes.
+- More themes or the option to create custom themes with a live preview example to see how your color values appear.
 
 ## Languages Used
 - HTML
