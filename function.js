@@ -124,6 +124,21 @@ let modeBtn= document.querySelector('.mode_switch');
 
 console.log(localStorage);
 
+let themeWrapperBtn = document.querySelector('.theme_wrapper_button');
+let themeWrapper = document.querySelector('.theme_slot_wrapper');
+ 
+
+function themeSelect() {
+
+  themeWrapper.classList.remove
+
+}themeWrapperBtn.addEventListener('click', themeSelect)
+
+function juic4(){
+
+
+}themeWrapper.addEventListener('click', juic4)
+ 
 /* trying to add in custom navigation for arrow keys 
 
 function focusArrowFunc(){
@@ -148,6 +163,7 @@ console.log(focusedElement);
 
   }
     
+  
 
   }
  /* 
@@ -1237,9 +1253,9 @@ tagObj = {
    
 
 function alignmentAppear() {
-   currentAlignmentIcon.classList.add('active_toolbar_btn');
+  currentAlignmentIcon.classList.add('active_toolbar_btn');
   textFomattingOptionsWrapper.classList.remove('alignment_hidden');// add if statement that changes backgrouond color of textFomattingOptionsWrapper to match the current mode
-//  toolBar.append(currentAlignmentIcon);
+  //  toolBar.append(currentAlignmentIcon);
 
 
  
@@ -1250,9 +1266,22 @@ function alignmentAppear() {
   textFomattingOptionsWrapper.style.bottom= `${34}px`;
   textFomattingOptionsWrapper.style.left= `${btnPosition.left}px`;
 
+
+
 }currentAlignmentIcon.addEventListener('click', alignmentAppear)
   // toolBar.addEventListener('scroll', alignmentAppear)
 
+
+function textFormDeselect() {
+  currentAlignmentIcon.classList.remove('active_toolbar_btn');
+  textFomattingOptionsWrapper.classList.add('alignment_hidden');// add if statement that changes backgrouond color of textFomattingOptionsWrapper to match the current mode
+  //  toolBar.append(currentAlignmentIcon);
+
+
+ 
+
+}textFomattingOptionsWrapper.addEventListener('click', textFormDeselect)
+ 
 
 function filterNotes(){
   let searchquery = searchNotes.value.trim().toLowerCase(); //trim() cuts whites space and tolowercase makes search query case insensitive
@@ -3111,6 +3140,7 @@ function imgDragover(){
 }//recievedImage.addEventListener('drop', imgDrop)
 
 */
+
 /*
 function pasteFunction(){
 
